@@ -32,10 +32,12 @@ RUN sudo apt update && \
 
 # Source the ROS setup file
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
-ARG PROJECT_NAME= 
 # Source workspace setup file
-RUN echo "source /${PROJECT_NAME}/install/setup.bash" >> ~/.bashrc
-
+ARG WORKSPACE_NAME=ros2_autonomous_robot 
+# Source workspace setup file
+RUN if [ -d "/${WORKSPACE_NAME}/install" ]; then \
+        echo "source /${WORKSPACE_NAME}/install/setup.bash" >> ~/.bashrc; \
+    fi
 # Setup colcon
 RUN echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
 
