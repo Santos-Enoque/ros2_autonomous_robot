@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "my_robot_bringup")
 set(my_robot_bringup_VERSION "0.0.0")
-set(my_robot_bringup_MAINTAINER "vscode <santos_enoque@cyberdyne.jp>")
+set(my_robot_bringup_MAINTAINER "ed <edouard.renard.pro@gmail.com>")
 set(my_robot_bringup_BUILD_DEPENDS )
 set(my_robot_bringup_BUILDTOOL_DEPENDS "ament_cmake")
 set(my_robot_bringup_BUILD_EXPORT_DEPENDS )

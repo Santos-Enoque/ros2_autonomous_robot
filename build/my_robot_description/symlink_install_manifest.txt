@@ -1,9 +1,10 @@
-/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description/urdf/common_properties.xacro
-/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description/urdf/mobile_base.xacro
-/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description/urdf/mobile_base_gazebo.xacro
-/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description/urdf/my_robot.urdf.xacro
-/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description/launch/display.launch.xml
-/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description/rviz/urdf_config.rviz
+/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description//urdf/common_properties.xacro
+/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description//urdf/mobile_base.xacro
+/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description//urdf/mobile_base_gazebo.xacro
+/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description//urdf/my_robot.urdf.xacro
+/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description//launch/display.launch.py
+/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description//launch/display.launch.xml
+/ros2_autonomous_robot/install/my_robot_description/share/my_robot_description//rviz/urdf_config.rviz
 /ros2_autonomous_robot/install/my_robot_description/share/ament_index/resource_index/package_run_dependencies/my_robot_description
 /ros2_autonomous_robot/install/my_robot_description/share/ament_index/resource_index/parent_prefix_path/my_robot_description
 /ros2_autonomous_robot/install/my_robot_description/share/my_robot_description/environment/ament_prefix_path.sh

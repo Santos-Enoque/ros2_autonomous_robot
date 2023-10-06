@@ -25,19 +25,18 @@ RUN sudo apt update && \
     ros-${ROS_DISTRO}-ros2-control \
     ros-${ROS_DISTRO}-ros2-controllers \
     ros-${ROS_DISTRO}-xacro \
-    ros-${ROS_DISTRO}-gazebo-ros \
     ros-${ROS_DISTRO}-gazebo-ros2-control \
     ros-${ROS_DISTRO}-joint-state-publisher-gui \
-    ros-${ROS_DISTRO}-urdf-tutorial 
+    ros-${ROS_DISTRO}-urdf-tutorial  \
+    ros-${ROS_DISTRO}-gazebo-ros-pkgs
+
 
 # Source the ROS setup file
 RUN echo "source /opt/ros/${ROS_DISTRO}/setup.bash" >> ~/.bashrc
 # Source workspace setup file
 ARG WORKSPACE_NAME=ros2_autonomous_robot 
 # Source workspace setup file
-RUN if [ -d "/${WORKSPACE_NAME}/install" ]; then \
-        echo "source /${WORKSPACE_NAME}/install/setup.bash" >> ~/.bashrc; \
-    fi
+RUN echo "source /${WORKSPACE_NAME}/install/setup.bash" >> ~/.bashrc
 # Setup colcon
 RUN echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
 

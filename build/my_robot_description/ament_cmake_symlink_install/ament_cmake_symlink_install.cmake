@@ -310,8 +310,8 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(DIRECTORY "urdf" "launch" "rviz" "DESTINATION" "share/my_robot_description")
-ament_cmake_symlink_install_directory("/ros2_autonomous_robot/src/my_robot_description" DIRECTORY "urdf" "launch" "rviz" "DESTINATION" "share/my_robot_description")
+# install(DIRECTORY "urdf" "launch" "rviz" "DESTINATION" "share/my_robot_description/")
+ament_cmake_symlink_install_directory("/ros2_autonomous_robot/src/my_robot_description" DIRECTORY "urdf" "launch" "rviz" "DESTINATION" "share/my_robot_description/")
 
 # install(FILES "/ros2_autonomous_robot/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_robot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/ros2_autonomous_robot/src/my_robot_description" FILES "/ros2_autonomous_robot/build/my_robot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_robot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
